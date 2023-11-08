@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cta-link {
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: orange;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 70px;
+  align-items: center;
+}
+#header-logo {
+  height: 65px;
+}
+
+.intro {
+  height: calc(100vh - 100px);
+  background-image: url("./images/introbg.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 18px 70px;
+  gap: 20px;
+  text-align: center;
+}
+.intro h1 {
+  font-size: 45px;
+  max-width: 60%;
+}
+.intro p {
+  font-size: 20px;
+}
+
+/* traction/numbers section */
+.traction {
+  padding: 70px;
+  background-image: url("./images/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  position: relative;
+}
+.traction .group {
+  width: 30%;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  z-index: 2;
+}
+.traction .group * {
+  margin: 8px 0px;
+}
+.group ion-icon {
+  font-size: 2rem;
+}
+.group p:nth-child(2) {
+  font-size: 2rem;
+}
+/* pseudo  */
+.traction::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #23638f;
+  opacity: 0.9;
+  z-index: 1;
+  /* research on the z-index -- it represent the z-axis in a 3d cartasian plane */
+}
+
+/* contact seciotn */
+
+.contact {
+  padding: 18px 70px;
+}
+
+.contact-container {
+  display: flex;
+  box-shadow: 0px 0px 5px lightcyan;
+  border-radius: 8px;
+}
+.contact-info {
+  color: white;
+  background-color: #23638f;
+  padding: 20px;
+  flex: 1;
+}
+.contact-info > * {
+  margin: 20px 0px;
+}
+.contact-info ion-icon {
+  margin-right: 30px;
+}
+.contact-info a {
+  text-decoration: underline;
+}
+.contact-info h3 {
+  text-align: center;
+}
+.contact-info p:nth-child(2) {
+  text-align: center;
+}
+.contact-info p {
+  font-size: 14px;
+}
+.contact-form {
+  margin-left: 20px;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 1.7;
+}
+input {
+  all: unset;
+  width: 42%;
+  padding: 16px;
+  border: 1px solid rgb(236, 232, 232);
+  border-radius: 4px;
+}
+textarea {
+  width: 98%;
+  border: 1px solid rgb(236, 232, 232);
+}
+input[type="submit"] {
+  width: max-content;
+  display: block;
+  background-color: #23638f;
+  color: white;
+  border-radius: 20px;
+  margin: 10px auto;
+}
